@@ -1,0 +1,21 @@
+<h2> Iserção de clientes</h2>
+<mat-form-field appearance='fill'>
+    <mat-label>Digite seu nome</mat-label>
+    <input matInput type="text" [(ngModel)]="nome">
+    <button *ngIf="nome"
+    matSuffix
+    mat-icon-butoon
+    (click)="onAdicionarCliente()">
+        Inserir cliente</button>
+</mat-form-field>
+<input typ="test" placeholder="Digite seu nome"
+[(ngModel)]="nome">
+<br>
+<input typ="test" placeholder="Digite seu fone"
+[(ngModel)]="fone">
+<br>
+<input typ="test" placeholder="Digite seu e-mail"
+[(ngModel)]="email">
+<hr>
+<button (click)="onAdicionarCliente()">
+    Inserir cliente</button>
